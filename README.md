@@ -1,6 +1,7 @@
 # Total Sales Dashboard - PT Sejahtera Bersama
 
-**Objective**: 
+## Objective
+
 The goal of this project is to provide PT Sejahtera Bersama with an interactive dashboard that visualizes and analyzes total sales data across different product categories, cities, and time periods. The objective is to assist in optimizing business strategies, identifying high-performing products, regions, and periods, and ultimately supporting data-driven decision-making.
 
 ## Features
