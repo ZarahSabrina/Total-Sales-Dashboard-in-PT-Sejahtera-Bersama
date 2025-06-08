@@ -1,0 +1,23 @@
+CREATE TABLE `sigma-maker-461722-n9.BI_Analyst_Bank_Muamalat.master_table_PT_sejahtera_bersama` AS
+SELECT 
+    o.Date AS order_date,
+    pc.CategoryName AS category_name,
+    p.ProdName AS product_name,
+    p.Price AS product_price,
+    o.Quantity AS order_qty,
+    (o.Quantity * p.Price) AS total_sales,
+    c.CustomerEmail AS cust_email,
+    c.CustomerCity AS cust_city
+FROM 
+    `sigma-maker-461722-n9.BI_Analyst_Bank_Muamalat.Customers` c
+JOIN 
+    `sigma-maker-461722-n9.BI_Analyst_Bank_Muamalat.Orders` o 
+    ON c.CustomerID = o.CustomerID
+JOIN 
+    `sigma-maker-461722-n9.BI_Analyst_Bank_Muamalat.Products` p
+    ON o.ProdNumber = p.ProdNumber
+JOIN 
+    `sigma-maker-461722-n9.BI_Analyst_Bank_Muamalat.ProductCategory` pc
+    ON p.Category = pc.CategoryID
+ORDER BY 
+    o.Date ASC;
