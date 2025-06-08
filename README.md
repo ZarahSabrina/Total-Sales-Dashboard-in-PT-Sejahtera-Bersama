@@ -16,9 +16,9 @@ The goal of this project is to provide PT Sejahtera Bersama with an interactive 
 * **Google BigQuery**: Used for storing and processing large datasets, making it easy to analyze sales data quickly and efficiently.
 * **Looker Studio**: Provides a visual interface to create interactive dashboards and reports, allowing users to interact with the data and gain insights.
 
-## Data Sources
+## Data Processing
 
-Sales data is extracted from PT Sejahtera Bersama’s database and processed using **Google BigQuery**. The data includes transaction details, categorized by product, city, and time. The processed data is then visualized in **Looker Studio** to provide actionable insights.
+Sales data is processed using **Google BigQuery**. The data includes transaction details, categorized by product, city, and time. The processed data is then visualized in **Looker Studio** to provide actionable insights.
 
 ## Installation
 
